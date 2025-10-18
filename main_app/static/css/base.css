@@ -273,3 +273,42 @@ nav li {
     }
   }
 }
+
+#logout-form {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  display: inline; /* Treat the form like inline text to avoid block-level spacing */
+}
+
+#logout-form button {
+  /* Reset all default button styles */
+  appearance: none; /* Removes browser-specific button appearance */
+  -webkit-appearance: none; /* For Safari/older browsers */
+  -moz-appearance: none; /* For Firefox */
+  background: none; /* No background */
+  border: none; /* No border */
+  padding: 0; /* No extra padding (relies on nav li for spacing) */
+  margin: 0; /* No margins */
+  outline: none; /* Remove focus outline if unwanted, or style it separately */
+  box-shadow: none; /* No shadows */
+  cursor: pointer; /* Hand cursor on hover */
+  font: inherit; /* Inherit font from parent (matches body/nav) */
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* No underline */
+  line-height: normal; /* Consistent text height */
+  vertical-align: baseline; /* Align text properly with links */
+
+  /* Explicitly match nav a styles */
+  color: var(--text-color); /* rgb(17, 20, 17) */
+  font-weight: 600;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+#logout-form button:hover,
+#logout-form button:focus {
+  color: var(--link-hover-color); /* rgb(16, 56, 158) - matches nav a:hover */
+  text-decoration: none; /* Ensure no underline on hover/focus */
+}
